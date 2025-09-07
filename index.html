@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iqbal Husain | Data Analyst & AI Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .bg-primary {
+            background-color: #0d3b66;
+        }
+        .text-primary {
+            color: #0d3b66;
+        }
+        .bg-accent {
+            background-color: #2ecc71;
+        }
+        .text-accent {
+            color: #2ecc71;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-xl font-bold text-primary">Iqbal Husain</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="hover:text-accent transition">About</a>
+                    <a href="#skills" class="hover:text-accent transition">Skills</a>
+                    <a href="#projects" class="hover:text-accent transition">Projects</a>
+                    <a href="#experience" class="hover:text-accent transition">Experience</a>
+                    <a href="#certifications" class="hover:text-accent transition">Certifications</a>
+                    <a href="#research" class="hover:text-accent transition">Research</a>
+                    <a href="#contact" class="hover:text-accent transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none" id="menu-toggle">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden py-4" id="mobile-menu">
+                <a href="#about" class="block py-2 hover:text-accent transition">About</a>
+                <a href="#skills" class="block py-2 hover:text-accent transition">Skills</a>
+                <a href="#projects" class="block py-2 hover:text-accent transition">Projects</a>
+                <a href="#experience" class="block py-2 hover:text-accent transition">Experience</a>
+                <a href="#certifications" class="block py-2 hover:text-accent transition">Certifications</a>
+                <a href="#research" class="block py-2 hover:text-accent transition">Research</a>
+                <a href="#contact" class="block py-2 hover:text-accent transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section class="pt-32 pb-20 px-6 bg-gradient-to-r from-blue-50 to-white">
+    <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <!-- Profile Image -->
+        <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+            <div class="w-64 h-64 rounded-full bg-gray-200 mx-auto md:mx-0 overflow-hidden shadow-lg border-4 border-blue-200">
+                <img src="https://github.com/Iqbal78692/Portfolio/blob/main/Phot%20(1).jpeg?raw=true" 
+                     alt="Iqbal Husain | Data Analyst & AI Developer" 
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <!-- Hero Text -->
+        <div class="md:w-1/2 md:pl-12 text-center md:text-left" data-aos="fade-left">
+            <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">Iqbal Husain</h1>
+            <h2 class="text-xl md:text-2xl text-gray-700 mb-4">
+                Data Analyst | AI Developer | Carbon Credit Researcher
+            </h2>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                Passionate about transforming data into intelligent insights and building AI-driven solutions. 
+                Currently researching <span class="font-semibold text-primary">Carbon Credit Pilot Projects</span> and 
+                <span class="font-semibold text-primary">Sustainable Finance</span> to drive impactful change.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="#projects" 
+                   class="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition">
+                   🚀 View My Projects
+                </a>
+                <a href="https://drive.google.com/file/d/1vAZsr9jp9fFnYINFCweNV08m2wDdb8cX/view?usp=sharing"
+                   target="_blank"
+                   class="bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition">
+                   📄 View Resume
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Professional Summary -->
+<section id="about" class="py-16 px-6 bg-white">
+    <div class="container mx-auto" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-center text-primary mb-12">Professional Summary</h2>
+        <div class="max-w-3xl mx-auto bg-blue-50 rounded-xl p-8 shadow-sm">
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Results-oriented <strong>Data Analyst</strong> and <strong>AI Developer</strong> with practical experience in 
+                <strong>Python, SQL, Power BI, Machine Learning, NLP and Data Visualization</strong>. Skilled at developing 
+                <strong>AI-powered applications</strong>, building <strong>predictive models</strong>, and delivering 
+                <strong>data-driven insights</strong> to support business decision-making. Experienced in working on 
+                <strong>Carbon Credit Pilot Projects</strong>, leveraging <strong>machine learning</strong> and 
+                <strong>data analytics</strong> to improve pricing predictions and market transparency. Passionate about 
+                <strong>sustainable finance</strong>, <strong>business intelligence</strong>, and creating 
+                <strong>impactful solutions</strong> through technology and innovation.
+            </p>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Section -->
+<section id="skills" class="py-16 px-6 bg-gray-50">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center text-primary mb-12" data-aos="fade-up">
+            Skills & Expertise
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- Programming -->
+            <div class="skill-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                <div class="text-accent mb-4">
+                    <i data-feather="code" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Programming</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> Python (Pandas, NumPy, Streamlit, Matplotlib)</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> SQL & ETL Pipelines</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> R Programming</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> Git & GitHub</li>
+                </ul>
+            </div>
+
+            <!-- AI / ML -->
+            <div class="skill-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                <div class="text-accent mb-4">
+                    <i data-feather="cpu" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">AI / Machine Learning</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> Machine Learning & Predictive Modeling</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> Generative AI & LLMs</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> NLP & Chatbot Development</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> AI-Powered Automation</li>
+                </ul>
+            </div>
+
+            <!-- Data Visualization -->
+            <div class="skill-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                <div class="text-accent mb-4">
+                    <i data-feather="bar-chart-2" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Data Visualization</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> Power BI & Dashboarding</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> Tableau</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> Advanced Excel</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> Data Wrangling & Cleaning</li>
+                </ul>
+            </div>
+
+            <!-- Finance & Tools -->
+            <div class="skill-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300" data-aos="fade-up" data-aos-delay="400">
+                <div class="text-accent mb-4">
+                    <i data-feather="tool" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-3">Finance & Tools</h3>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> Carbon Credit Analysis</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> Sustainable Finance & ESG Reporting</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> Financial Modeling</li>
+                    <li class="flex items-center"><i data-feather="check" class="w-4 h-4 mr-2 text-accent"></i> OpenAI API Integration</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-6 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12" data-aos="fade-up">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://github.com/Iqbal78692/food-delivery-time-prediction/blob/main/Deployment.png?raw=true" alt="Food Delivery Time Prediction" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Food Delivery Time Prediction</h3>
+                        <p class="text-gray-600 mb-4">Machine learning model to predict food delivery times with 85% accuracy.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">ML</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Streamlit</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Python</span>
+                      </div>
+<div class="flex space-x-3">
+    <!-- GitHub Link -->
+    <a href="https://github.com/Iqbal78692/food-delivery-time-prediction" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="text-accent hover:underline flex items-center">
+        <i data-feather="github" class="w-4 h-4 mr-1"></i> GitHub
+    </a>
+
+    <!-- Live Demo Link -->
+    <a href="#" 
+       class="text-accent hover:underline flex items-center">
+        <i data-feather="external-link" class="w-4 h-4 mr-1"></i> Live Demo
+    </a>
+</div>
+</div>
+</div>
+
+
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://private-user-images.githubusercontent.com/179380176/481401412-fdc199ba-073c-4541-844d-bfb004b52105.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTcxODM1NjEsIm5iZiI6MTc1NzE4MzI2MSwicGF0aCI6Ii8xNzkzODAxNzYvNDgxNDAxNDEyLWZkYzE5OWJhLTA3M2MtNDU0MS04NDRkLWJmYjAwNGI1MjEwNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTA2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkwNlQxODI3NDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mOTU2Mjg0NGRlNTFhZWFiYTE1M2Q5ZWI2ZDYxODllMjM3YjIyMjA0NGI0ZWU4NTYxOWJkZmQzMTgzODMxODM3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.0_LJk0JtTFVS9z7P4NHZnH_wVf-Z997JFtAZ3EU5Ojs" alt="Madhav E-commerce Sales Dashboard" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Madhav E-commerce Sales Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Interactive Power BI dashboard tracking sales performance and trends.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Power BI</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">DAX</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Data Modeling</span>
+                        </div>
+                        <div class="flex space-x-3">
+                             <!-- GitHub Link -->
+                            <a href="https://github.com/Iqbal78692/Madhav-Ecommerce-Sales-Dashboard"
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                            class="text-accent hover:underline flex items-center"    >
+                                <i data-feather="github" class="w-4 h-4 mr-1"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://github.com/Iqbal78692/mnist-digit-recognition/blob/main/mnist_image.png?raw=true" alt="Handwritten Digit Recognition" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Handwritten Digit Recognition</h3>
+                        <p class="text-gray-600 mb-4">CNN model achieving 98% accuracy on MNIST dataset.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">CNN</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">TensorFlow</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Keras</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://github.com/Iqbal78692/mnist-digit-recognition" class="text-accent hover:underline flex items-center">
+                                <i data-feather="github" class="w-4 h-4 mr-1"></i> GitHub
+                            </a>
+                            <a href="https://github.com/Iqbal78692/mnist-digit-recognition" class="text-accent hover:underline flex items-center">
+                                <i data-feather="external-link" class="w-4 h-4 mr-1"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="http://static.photos/technology/640x360/3" alt="Conversational AI Chatbot" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Conversational AI Chatbot</h3>
+                        <p class="text-gray-600 mb-4">GPT-powered chatbot with custom knowledge base integration.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">GPT</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Streamlit</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">OpenAI API</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-accent hover:underline flex items-center">
+                                <i data-feather="github" class="w-4 h-4 mr-1"></i> GitHub
+                            </a>
+                            <a href="#" class="text-accent hover:underline flex items-center">
+                                <i data-feather="external-link" class="w-4 h-4 mr-1"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://github.com/Iqbal78692/vrinda-store-data-analysis/blob/main/Screenshot%202025-05-11%20112248.png?raw=true" alt="Vrinda Store Sales Report" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Vrinda Store Sales Report</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive Excel sales analysis with pivot tables and dashboards.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Excel</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Pivot Tables</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Data Analysis</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-accent hover:underline flex items-center">
+                                <i data-feather="github" class="w-4 h-4 mr-1"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+<section id="experience" class="py-16 px-6 bg-gray-50">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center text-primary mb-12" data-aos="fade-up">
+            Professional Experience
+        </h2>
+        <div class="max-w-3xl mx-auto">
+
+            <!-- Experience 1 -->
+            <div class="mb-10" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex flex-col md:flex-row justify-between mb-2">
+                    <h3 class="text-xl font-semibold">Operations Manager</h3>
+                    <div class="text-accent font-medium">Mar 2025 – Present</div>
+                </div>
+                <div class="text-gray-600 mb-3">Incubation Center, IIIT Lucknow | Lucknow, India</div>
+                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Optimized operational workflows, improving incubation efficiency by 25%.</li>
+                    <li>Coordinated with 10+ startups and mentors to streamline project deliverables.</li>
+                    <li>Implemented reporting systems reducing turnaround time by 30%.</li>
+                </ul>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="mb-10" data-aos="fade-up" data-aos-delay="200">
+                <div class="flex flex-col md:flex-row justify-between mb-2">
+                    <h3 class="text-xl font-semibold">AI Developer & Mathematics Expert</h3>
+                    <div class="text-accent font-medium">Jan 2024 – Mar 2025</div>
+                </div>
+                <div class="text-gray-600 mb-3">Outlier.ai | Remote</div>
+                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Developed AI-driven mathematical and NLP solutions using LLMs, boosting accuracy by 18%.</li>
+                    <li>Created multimodal reasoning tasks, enhancing dataset quality by 30%.</li>
+                </ul>
+            </div>
+
+            <!-- Experience 3 -->
+            <div class="mb-10" data-aos="fade-up" data-aos-delay="300">
+                <div class="flex flex-col md:flex-row justify-between mb-2">
+                    <h3 class="text-xl font-semibold">Data Science & Analytics Intern</h3>
+                    <div class="text-accent font-medium">May 2025 – Aug 2025</div>
+                </div>
+                <div class="text-gray-600 mb-3">ZIDIO Development (AICTE Approved) | Bengaluru, India</div>
+                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Worked on data preprocessing, analysis, and visualization using Python, SQL, and Power BI.</li>
+                    <li>Developed a predictive analytics model that improved business insights by 20%.</li>
+                    <li>Collaborated with a team of 5 interns to deliver AI-powered dashboards and reports.</li>
+                </ul>
+            </div>
+
+            <!-- Experience 4 -->
+            <div class="mb-10" data-aos="fade-up" data-aos-delay="400">
+                <div class="flex flex-col md:flex-row justify-between mb-2">
+                    <h3 class="text-xl font-semibold">Business Analyst Intern</h3>
+                    <div class="text-accent font-medium">Mar 2025 – Apr 2025</div>
+                </div>
+                <div class="text-gray-600 mb-3">GAO Tek Inc. | Remote</div>
+                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Designed Power BI dashboards tracking sales KPIs, improving reporting speed by 35%.</li>
+                    <li>Conducted market research to identify 15% growth opportunities in emerging sectors.</li>
+                </ul>
+            </div>
+
+            <!-- Experience 5 -->
+            <div class="mb-10" data-aos="fade-up" data-aos-delay="500">
+                <div class="flex flex-col md:flex-row justify-between mb-2">
+                    <h3 class="text-xl font-semibold">Private Math Instructor</h3>
+                    <div class="text-accent font-medium">Jun 2021 – Aug 2024</div>
+                </div>
+                <div class="text-gray-600 mb-3">Self-Employed | Gorakhpur, India</div>
+                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Taught advanced mathematics to 50+ students, improving average scores by 20%.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+   <!-- Certifications Section -->
+<section id="certifications" class="py-16 px-6 bg-gray-50">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center text-primary mb-12" data-aos="fade-up">Certifications</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Certification 1 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md transition duration-300 hover:shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-48 overflow-hidden flex items-center justify-center bg-gray-100">
+                    <img src="https://github.com/Iqbal78692/Portfolio/blob/main/Screenshot%202025-09-07%20233821.png?raw=true" alt="Google Data Analytics Certificate" class="h-full w-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Google  Analytics Professional</h3>
+                    <p class="text-gray-600 mb-4">Issued: Jun 2025</p>
+                    <a href="https://skillshop.credential.net/5c191cff-7481-48f5-a484-74d6b60c0f0a" target="_blank" class="text-accent hover:underline flex items-center">
+                        <i data-feather="external-link" class="w-4 h-4 mr-1"></i> View Credential
+                    </a>
+                </div>
+            </div>
+
+            <!-- Certification 2 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md transition duration-300 hover:shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-48 overflow-hidden flex items-center justify-center bg-gray-100">
+                    <img src="https://github.com/Iqbal78692/Portfolio/blob/main/Screenshot%202025-09-07%20235249.png?raw=true" alt="Microsoft Azure AI Certificate" class="h-full w-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Data Analysis Using Python</h3>
+                    <p class="text-gray-600 mb-4">Issued: Sep 2022</p>
+                    <a href="https://www.credly.com/badges/31c4c19f-9810-401d-b148-afb4e0f70ced/linked_in_profile" target="_blank" class="text-accent hover:underline flex items-center">
+                        <i data-feather="external-link" class="w-4 h-4 mr-1"></i> View Credential
+                    </a>
+                </div>
+            </div>
+
+            <!-- Certification 3 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md transition duration-300 hover:shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                <div class="h-48 overflow-hidden flex items-center justify-center bg-gray-100">
+                    <img src="https://github.com/Iqbal78692/Portfolio/blob/main/Screenshot%202025-09-07%20173923.png?raw=true" alt="Zidio Internship Certificate" class="h-full w-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">ZIDIO Development – Data Science & Analytics Internship</h3>
+                    <p class="text-gray-600 mb-4">Issued: Aug 2025</p>
+                    <a href="https://zidio.in/shared.html?id=zid/4BmQrRjE8D" target="_blank" class="text-accent hover:underline flex items-center">
+                        <i data-feather="external-link" class="w-4 h-4 mr-1"></i> View Credential
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Research Section -->
+<section id="research" class="py-16 px-6 bg-white">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center text-primary mb-12" data-aos="fade-up">
+            Research Focus
+        </h2>
+        <div class="max-w-3xl mx-auto bg-blue-50 rounded-xl p-8 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-xl font-semibold mb-4 text-primary">
+                Research on Carbon Credit Pilot Projects
+            </h3>
+            <p class="text-gray-700 mb-4">
+                I am currently researching <strong>Carbon Credit Pilot Projects</strong>, focusing on how these projects are 
+                designed, verified, and implemented to reduce carbon emissions. My work involves studying the 
+                <strong>pricing mechanisms, certification processes</strong>, and <strong>market adoption</strong> of carbon credits 
+                generated through these pilot initiatives.
+            </p>
+            <p class="text-gray-700">
+                Additionally, I am exploring the use of <strong>data analytics and machine learning models</strong> to analyze 
+                project performance and predict <strong>carbon credit prices</strong> based on project characteristics, market trends, 
+                and sustainability outcomes. This research aims to contribute towards improving the efficiency and 
+                transparency of carbon credit trading.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12" data-aos="fade-up">Get In Touch</h2>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i data-feather="mail" class="w-5 h-5 mt-1 mr-4 text-accent"></i>
+                            <div>
+                                <p class="font-medium">Email</p>
+                                <a href="mailto:ikbalmod007@gmail.com" class="text-gray-600 hover:text-accent transition">ikbalmod007@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="phone" class="w-5 h-5 mt-1 mr-4 text-accent"></i>
+                            <div>
+                                <p class="font-medium">Phone</p>
+                                <a href="tel:+1234567890" class="text-gray-600 hover:text-accent transition">+91 7704866278</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="linkedin" class="w-5 h-5 mt-1 mr-4 text-accent"></i>
+                            <div>
+                                <p class="font-medium">LinkedIn</p>
+                                <a href="https://www.linkedin.com/in/iqbal-husain-b61b76323" target="_blank" class="text-gray-600 hover:text-accent transition">linkedin.com/in/iqbal-husain-b61b76323</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="github" class="w-5 h-5 mt-1 mr-4 text-accent"></i>
+                            <div>
+                                <p class="font-medium">GitHub</p>
+                                <a href="https://github.com/Iqbal78692" target="_blank" class="text-gray-600 hover:text-accent transition">github.com/Iqbal78692</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <h3 class="text-xl font-semibold mb-6">Send Me a Message</h3>
+                    <!-- <form class="space-y-4"> --><form action="https://formspree.io/f/mblaqglo" method="POST" class="space-y-4">
+
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <!-- <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"> -->
+                             <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent">
+
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="bg-accent text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Feather Icons CDN -->
+<script src="https://unpkg.com/feather-icons"></script>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-8 px-6">
+    <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <p>&copy; 2025 Iqbal Husain. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/iqbal-husain-b61b76323" 
+                   target="_blank" 
+                   class="hover:text-green-400 transition">
+                    <i data-feather="linkedin"></i>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/Iqbal78692" 
+                   target="_blank" 
+                   class="hover:text-green-400 transition">
+                    <i data-feather="github"></i>
+                </a>
+                <!-- Twitter -->
+                <a href="https://twitter.com" 
+                   target="_blank" 
+                   class="hover:text-green-400 transition">
+                    <i data-feather="twitter"></i>
+                </a>
+                <!-- Email -->
+                <a href="mailto:ikbalmohd007@gmail.com" 
+                   class="hover:text-green-400 transition">
+                    <i data-feather="mail"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- AOS Library -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    if (menuToggle) {
+        menuToggle.addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    }
+
+    // Initialize AOS
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+    });
+
+    // Feather icons initialize
+    feather.replace();
+</script>
